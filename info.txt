@@ -1,0 +1,22 @@
+app/
+    components/
+        header.component
+        footer.component
+    pages/
+        home.component
+        discount.component
+        roli.component
+       setu.component
+        napoyi.component
+        delivery.component
+        sousi.component
+        about.component
+    shared/
+        styles/
+        interfaces/
+        services/
+    admin.component
+        admin-discount.component
+        admin-category.component
+        admin-products.component
+        admin-orders.component

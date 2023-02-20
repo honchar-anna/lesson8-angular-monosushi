@@ -1,0 +1,36 @@
+
+<button class="show-form-add">ДОДАТИ АКЦІЮ</button>
+<form action="" class="add-form" [formGroup]="discountForm" (ngSubmit)="add()">
+   <input type="text" class="name" placeholder="*Назва" formControlName="name" name="name">
+   <input type="text" class="title" placeholder="*Заголовок" formControlName="title" name="title">
+   <textarea class="text" placeholder="*Опис" formControlName="text" name="text"></textarea>
+   <ng-container *ngIf="!isUploaded">
+      <div class="mb-3">
+         <input class="form-control" id="formFile" type="file"  (change)="upload($event)">
+        </div>
+   </ng-container>
+   <ng-container *ngIf="isUploaded">
+<img [src]=" valueByControl('imgPath')" alt="">
+<button type="button" class=" btn-danger" (click)="deleteImg()"> ВИДАЛИТИ</button>
+   </ng-container>
+   <button  class="btn-add"  [disabled]="discountForm.invalid" type="submit">{{editStatus? 'Зберегти':' Додати'}}</button>
+</form>
+
+<table>
+   <thead>
+      <th>Дата</th>
+      <th>Назва</th>
+      <th>Заголовок</th>
+      <th>Опис</th>
+      <th>Картинка</th>
+      <th>Дії</th>
+   </thead>
+   <tbody *ngFor="let discount of adminDiscount; index as i">
+      <td>№{{i+1}}</td>
+      <td>{{discount.name}}</td>
+      <td>{{discount.title}}</td>
+      <td>{{discount.text}}</td>
+      <td><img [src]="discount.imgPath" alt=""></td>
+      <td><span (click)="edit(discount)">РЕДАГУВАТИ </span><br><span (click)="delete(discount)"> ВИДАЛИТИ</span></td>
+   </tbody>
+</table>
