@@ -1,0 +1,96 @@
+.one-block{
+ margin-top: 30px;
+ box-sizing: border-box;
+}
+.one-block h1{
+text-decoration: overline #b5d8f7;
+text-align: center;
+font-weight: bolder;
+margin-bottom: 30px;
+
+}
+.one-block h2,.text-block h1,.four-block h1{
+   font-weight: bolder;
+}
+.one-block p{
+   width: 990px;
+   font-size: 20px;
+}
+.one-block ul{
+   font-size: 20px;
+}
+.two-block,.three-block{
+   display: flex;
+   margin-top: 50px;
+   box-sizing: border-box;
+}
+.two-block img,.three-block img{
+   border-radius: 8px;
+   margin-right: 40px;
+}
+.text-block{
+   width: 430x;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-right: 90px;
+}
+
+.three-block img{
+   margin: 0px;
+}
+
+.four-block{
+   width: 100%;
+   margin-top: 100px;
+   margin-bottom: 100px;
+
+}
+.four-block h1{
+   text-align: center;
+   
+}
+
+.cards{
+   margin-top:50px;
+   display: flex;
+   justify-content: center;
+}
+
+.card{
+   width: 23%;
+   height: 250px;
+   text-align: center;
+   box-sizing: border-box;
+  border-radius:  0px;;
+  border: none;
+  padding: 10px;
+  margin-right: 30px;
+
+
+}
+.card:nth-child(1){
+   border-right:.5px solid rgba(0, 0, 0, 0.147) ;
+}
+.card:nth-child(2){
+   border-right:.5px solid rgba(0, 0, 0, 0.147) ;
+}
+.card:nth-child(3){
+   border-right:.5px solid rgba(0, 0, 0, 0.147) ;
+}
+.card img{
+   width: 90px;
+   height: 90px;
+   box-sizing: border-box;
+   background-color: #b5d8f7;
+   padding: 10px;
+   text-align: center;
+   border-radius: 8px;
+   margin: 10px 70px;
+   
+}
+.card h5{
+   font-weight: bold;
+   margin-top: 10px;
+}

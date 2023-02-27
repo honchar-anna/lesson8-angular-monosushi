@@ -1,0 +1,17 @@
+<div class="container">
+<div class="coponentu">
+  <ul>
+   <li [routerLink]="[ 'actions']" routerLinkActive="active">Акції</li>
+   <li [routerLink]="[ 'categories']" routerLinkActive="active">Категорії</li>
+   <li [routerLink]="[ 'products']" routerLinkActive="active">Товари</li>
+   <li [routerLink]="[ 'orders']" routerLinkActive="active">Замовлення</li>
+   <li>
+  <button>Вихід</button>
+
+   </li>
+  </ul>
+</div>
+<div class="table">
+   <router-outlet></router-outlet>
+</div>
+</div>
