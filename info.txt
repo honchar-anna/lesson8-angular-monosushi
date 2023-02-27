@@ -20,3 +20,4 @@ app/
         admin-category.component
         admin-products.component
         admin-orders.component
+json-server --watch db.json

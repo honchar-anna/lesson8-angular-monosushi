@@ -1,3 +1,90 @@
 {
-  "category": []
+  "dicount": [
+    {
+      "data": null,
+      "name": " Рол тижня",
+      "title": "50% знижки на \"Рол тижня\"",
+      "text": "Щотижня діє знижка 50% на один з ролів у нашому меню.\n“Рол тижня” ви можете знайти на головній сторінці нашого сайту.\nЗнижка діє при мінімальній сумі замовлення 300 грн.\nЦя акція не поєднується з іншими акціями.\n",
+      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2Frol-tugnya.jpg?alt=media&token=abcc737b-47ef-4398-8756-59346a6631be",
+      "id": 1
+    },
+    {
+      "data": null,
+      "name": "ДЕНЬ НАРОДЖЕННЯ З МОНОСУШІ ",
+      "title": "\"3+1=5\"",
+      "text": "\nЗамовляйте 5 ролів, а платіть за 4.\nЗамовляйте 10 ролів, а платіть за 8 і так далі.\nБезкоштовним вважається рол з найменшою вартістю.\nЦя акція не поєднується з іншими акціями.",
+      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2Fden-nar-scaled.jpg?alt=media&token=0924055f-0c14-4477-9f7c-1e5fde530d55",
+      "id": 2
+    }
+  ],
+  "category": [
+    {
+      "name": "Роли",
+      "path": "rolu",
+      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2Fnav-img-rolls.svg?alt=media&token=2d9febed-d597-4606-acd5-2d0809b8f348",
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "category": {
+        "name": "Роли",
+        "path": "rolu",
+        "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2Fnav-img-rolls.svg?alt=media&token=2d9febed-d597-4606-acd5-2d0809b8f348",
+        "id": 1
+      },
+      "name": "Сирний – 50%",
+      "ingredients": "Рис, крем сир, фета, кунжут",
+      "weight": "240 ",
+      "price": "82 ",
+      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2F01.-syrnyj.jpg?alt=media&token=d766159f-5110-43f0-942c-05ee7a7be710",
+      "count": 1,
+      "id": 1
+    },
+    {
+      "category": {
+        "name": "Роли",
+        "path": "rolu",
+        "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2Fnav-img-rolls.svg?alt=media&token=2d9febed-d597-4606-acd5-2d0809b8f348",
+        "id": 1
+      },
+      "name": "Філадельфія з лососем",
+      "ingredients": "Риc, крем сир, огірок, лосось",
+      "weight": "280",
+      "price": "247",
+      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2F1.-filadelfiya-z-lososem.jpg?alt=media&token=8688dc35-70c3-4866-8753-2265c6b77b97",
+      "count": null,
+      "id": 2
+    },
+    {
+      "category": {
+        "name": "Роли",
+        "path": "rolu",
+        "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2Fnav-img-rolls.svg?alt=media&token=2d9febed-d597-4606-acd5-2d0809b8f348",
+        "id": 1
+      },
+      "name": "Філадельфія в кунжуті",
+      "ingredients": "Рис, крем сир, огірок, лосось, кунжут",
+      "weight": "240",
+      "price": "228",
+      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2F2.-filadelfiya-v-kunzhuti.jpg?alt=media&token=b48dfaae-64fc-444a-9edf-a89f02a567b6",
+      "count": 1,
+      "id": 3
+    },
+    {
+      "category": {
+        "name": "Роли",
+        "path": "rolu",
+        "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2Fnav-img-rolls.svg?alt=media&token=2d9febed-d597-4606-acd5-2d0809b8f348",
+        "id": 1
+      },
+      "name": "Філадельфія з тунцем",
+      "ingredients": "Риc, крем сир, авокадо, тунець, cоус солодкий чилі",
+      "weight": "270",
+      "price": "282",
+      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2Fphoto_2022-07-09_13-28-56.jpg?alt=media&token=2bd24617-1466-4ce8-8d98-c850c6b09dc3",
+      "count": null,
+      "id": 4
+    }
+  ]
 }
