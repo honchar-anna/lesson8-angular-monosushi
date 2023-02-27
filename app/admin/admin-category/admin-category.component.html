@@ -1,0 +1,33 @@
+<button class="show-form-add">ДОДАТИ КАТЕГОЇЮ</button>
+<form action="" class="add-form" [formGroup]="categoryForm" (ngSubmit)="add()">
+   <input type="text" class="name" placeholder="*Назва" formControlName="name" name="name">
+   <input type="text" class="title" placeholder="*Шлях" formControlName="path" name="path">
+   <ng-container *ngIf="!isUploaded">
+      <div class="mb-3">
+         <input class="form-control" id="formFile" type="file"  (change)="upload($event)">
+        </div>
+   </ng-container>
+   <ng-container *ngIf="isUploaded">
+<img [src]=" valueByControl('imgPath')" alt="">
+<button type="button" class=" btn-danger" (click)="deleteImg()"> ВИДАЛИТИ</button>
+   </ng-container>
+   
+<button  class="btn-add"  [disabled]="categoryForm.invalid" type="submit">{{editStatus? 'Зберегти':' Додати'}}</button>
+
+</form>
+<table>
+   <thead>
+      <th>№</th>
+      <th>Назва</th>
+      <th>Шлях</th>
+      <th>Картинка</th>
+      <th>Дії</th>
+   </thead>
+   <tbody *ngFor="let category of adminCategory; index as i">
+      <td>№{{i+1}}</td>
+      <td>{{category.name}}</td>
+      <td>{{category.path}}</td>
+      <td><img [src]="category.imgPath" alt=""></td>
+      <td><span (click)="edit(category)">РЕДАГУВАТИ </span><br><span (click)="delete(category)"> ВИДАЛИТИ</span></td>
+   </tbody>
+</table>

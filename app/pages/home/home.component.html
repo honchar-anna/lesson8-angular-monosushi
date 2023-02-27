@@ -1,0 +1,54 @@
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+   <div class="carousel-inner">
+     <div class="carousel-item active">
+       <img src="https://monosushi.com.ua/wp-content/uploads/2022/12/den-narodzhennya-.jpg" class="d-block w-100" alt="...">
+     </div>
+     <div class="carousel-item">
+       <img src="https://monosushi.com.ua/wp-content/uploads/2022/12/monokombo.jpg" class="d-block w-100" alt="...">
+     </div>
+     <div class="carousel-item">
+       <img src="https://monosushi.com.ua/wp-content/uploads/2022/12/monokombo.jpg" class="d-block w-100" alt="...">
+     </div>
+   </div>
+   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Previous</span>
+   </button>
+   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Next</span>
+   </button>
+ </div>
+<div class="categorysRolu">
+  <span class="categoryNameRolu">Всі</span>
+  <span class="categoryNameRolu">Філадельфія</span>
+  <span class="categoryNameRolu">Каліфорнія</span>
+  <span class="categoryNameRolu">Запечені</span>
+  <span class="categoryNameRolu">Фірмова</span>
+  <span class="categoryNameRolu">Макі</span>
+  <span class="categoryNameRolu">Преміум</span>
+</div>
+<div class="containerP">
+  <ng-container *ngIf="userProduct.length>0">
+<div class="blockProduct" *ngFor="let product of userProduct">
+  <div class="info">
+     <img [src]="product.imgPath" alt="">
+     <p class="name">{{product.name}}</p>
+     <div class="product">
+        <p class="ingrediend">{{product.ingredients}}</p><br>
+        <p><strong>{{product.weight}}г</strong></p>
+     </div>
+     <div class="prise">
+       <div> <p><strong>{{product.price}}грн</strong></p></div>
+        <div class="count">
+           <span>-</span>
+           <span>1</span>
+           <span>+</span>
+        </div>
+       <div> <button>Замовити</button></div>
+     </div>
+  </div>
+</div>
+  </ng-container>
+  
+</div>
