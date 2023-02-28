@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, } from '@angular/forms';
 import { deleteObject, getDownloadURL, percentage, Storage, uploadBytesResumable } from '@angular/fire/storage';
 
 import { Category, CategoryRespons } from 'src/app/shared/interface/category.interface';

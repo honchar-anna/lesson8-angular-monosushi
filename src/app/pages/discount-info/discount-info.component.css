@@ -1,0 +1,25 @@
+.card-title{
+   background-color: #b5d8f7;
+   font-weight: bold;
+   width: 900px;
+   height: 70px;
+   font-size:30px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: overline;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 7px;
+}
+.card-text{
+   text-align: left;
+}
+.card{
+   width: 900px;
+   height: 500px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   border: none;
+    margin:20px auto;
+}

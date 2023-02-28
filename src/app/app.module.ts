@@ -15,6 +15,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { DiscountComponent } from './pages/discount/discount.component';
 import { DeliveryComponent } from './pages/delivery/delivery.component';
 import { ProductComponent} from './pages/product/product.component';
+import {ProductInfoComponent } from './pages/product-info/product-info.component';
 import { AboutComponent } from './pages/about/about.component';
 import { AdminComponent } from './admin/admin/admin.component';
 import { AdminDiscountComponent } from './admin/admin-discount/admin-discount.component';
@@ -24,6 +25,8 @@ import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.componen
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { DiscountInfoComponent } from './pages/discount-info/discount-info.component';
+
 
 @NgModule({
   declarations: [
@@ -39,7 +42,9 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     AdminCategoryComponent,
     AdminProductsComponent,
     AdminOrdersComponent,
-    ProductComponent
+    ProductComponent,
+    ProductInfoComponent,
+    DiscountInfoComponent,
   ],
   imports: [
     BrowserModule,

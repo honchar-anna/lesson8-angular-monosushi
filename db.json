@@ -7,14 +7,6 @@
       "text": "Щотижня діє знижка 50% на один з ролів у нашому меню.\n“Рол тижня” ви можете знайти на головній сторінці нашого сайту.\nЗнижка діє при мінімальній сумі замовлення 300 грн.\nЦя акція не поєднується з іншими акціями.\n",
       "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2Frol-tugnya.jpg?alt=media&token=abcc737b-47ef-4398-8756-59346a6631be",
       "id": 1
-    },
-    {
-      "data": null,
-      "name": "ДЕНЬ НАРОДЖЕННЯ З МОНОСУШІ ",
-      "title": "\"3+1=5\"",
-      "text": "\nЗамовляйте 5 ролів, а платіть за 4.\nЗамовляйте 10 ролів, а платіть за 8 і так далі.\nБезкоштовним вважається рол з найменшою вартістю.\nЦя акція не поєднується з іншими акціями.",
-      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2Fden-nar-scaled.jpg?alt=media&token=0924055f-0c14-4477-9f7c-1e5fde530d55",
-      "id": 2
     }
   ],
   "category": [
@@ -23,6 +15,24 @@
       "path": "rolu",
       "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2Fnav-img-rolls.svg?alt=media&token=2d9febed-d597-4606-acd5-2d0809b8f348",
       "id": 1
+    },
+    {
+      "name": "Сети",
+      "path": "setu",
+      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2Fnav-img-sets.svg?alt=media&token=e4709b48-5d4f-4968-81d0-71e1466776e0",
+      "id": 2
+    },
+    {
+      "name": "Напої",
+      "path": "napoi",
+      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2Fnav-img-drinks.svg?alt=media&token=37d60ed9-0aaf-43a9-a413-0a3ff10676e9",
+      "id": 3
+    },
+    {
+      "name": "Соуси",
+      "path": "soysu",
+      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2Ficon.svg?alt=media&token=b50950c7-0ed7-4050-a8c3-1114c277ebb6",
+      "id": 4
     }
   ],
   "products": [
@@ -35,8 +45,8 @@
       },
       "name": "Сирний – 50%",
       "ingredients": "Рис, крем сир, фета, кунжут",
-      "weight": "240 ",
-      "price": "82 ",
+      "weight": "240  г",
+      "price": "82 грн",
       "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2F01.-syrnyj.jpg?alt=media&token=d766159f-5110-43f0-942c-05ee7a7be710",
       "count": 1,
       "id": 1
@@ -53,7 +63,7 @@
       "weight": "280",
       "price": "247",
       "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2F1.-filadelfiya-z-lososem.jpg?alt=media&token=8688dc35-70c3-4866-8753-2265c6b77b97",
-      "count": null,
+      "count": 1,
       "id": 2
     },
     {
@@ -73,18 +83,48 @@
     },
     {
       "category": {
-        "name": "Роли",
-        "path": "rolu",
-        "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2Fnav-img-rolls.svg?alt=media&token=2d9febed-d597-4606-acd5-2d0809b8f348",
-        "id": 1
+        "name": "Сети",
+        "path": "setu",
+        "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2Fnav-img-sets.svg?alt=media&token=e4709b48-5d4f-4968-81d0-71e1466776e0",
+        "id": 2
       },
-      "name": "Філадельфія з тунцем",
-      "ingredients": "Риc, крем сир, авокадо, тунець, cоус солодкий чилі",
-      "weight": "270",
-      "price": "282",
-      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2Fphoto_2022-07-09_13-28-56.jpg?alt=media&token=2bd24617-1466-4ce8-8d98-c850c6b09dc3",
-      "count": null,
-      "id": 4
+      "name": "Сет Філадельфія",
+      "ingredients": "Філадельфія: з лососем / в кунжуті / з тунцем / з вугрем",
+      "weight": "1070 ",
+      "price": "999",
+      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2Fimgonline-com-ua-compressed-jknw6idh54664-scaled.jpg.pagespeed.ce.4A9elt-ybs.jpg?alt=media&token=bf823e26-d973-418e-b893-02d9ff5333e9",
+      "count": 1,
+      "id": 5
+    },
+    {
+      "category": {
+        "name": "Напої",
+        "path": "napoi",
+        "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2Fnav-img-drinks.svg?alt=media&token=37d60ed9-0aaf-43a9-a413-0a3ff10676e9",
+        "id": 3
+      },
+      "name": "Pepsi",
+      "ingredients": " ",
+      "weight": "0.33",
+      "price": " Pepsi Pepsi 0.33 л 35 ",
+      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2Fnav-img-drinks.svg?alt=media&token=cd5ee3a9-8788-4af2-9c09-78d2b402c65e",
+      "count": 1,
+      "id": 6
+    },
+    {
+      "category": {
+        "name": "Сети",
+        "path": "setu",
+        "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2Fnav-img-sets.svg?alt=media&token=e4709b48-5d4f-4968-81d0-71e1466776e0",
+        "id": 2
+      },
+      "name": "Anna",
+      "ingredients": "sdf",
+      "weight": "345",
+      "price": "345",
+      "imgPath": "https://firebasestorage.googleapis.com/v0/b/monosushi-2845c.appspot.com/o/images%2Fimgonline-com-ua-compressed-jknw6idh54664-scaled.jpg.pagespeed.ce.4A9elt-ybs.jpg?alt=media&token=176a8de4-4d83-40e0-8f97-d4162a0e509d",
+      "count": 1,
+      "id": 7
     }
   ]
 }

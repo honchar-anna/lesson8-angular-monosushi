@@ -5,7 +5,7 @@
             <img [src]="dis.imgPath" alt="">
          <p class="name">{{dis.name}}</p>
          </div>
-         <button >Детальніше</button>
+         <button [routerLink]="[ '/actions/'+ dis.id]">Детальніше</button>
       </div>
    </ng-container>
 </div>

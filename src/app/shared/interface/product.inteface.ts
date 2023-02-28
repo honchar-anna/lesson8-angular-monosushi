@@ -4,9 +4,10 @@ export interface ProductRequest{
    category:CategoryRespons,
    name:string,
    ingredients:string
-   weight:number
+   weight:string
    price:number,
    imgPath:string,
+   count:number
 
 }
 export interface ProductResponse extends ProductRequest{

@@ -1,21 +1,21 @@
 <div class="containerP">
-   <ng-container *ngIf="userProduct.length>0">
-<div class="blockProduct" *ngFor="let product of userProduct">
+   <ng-container *ngIf="userProducts.length>0">
+<div class="blockProduct" *ngFor="let product of userProducts">
    <div class="info">
-      <img [src]="product.imgPath" alt="">
+      <img [src]="product.imgPath"  [routerLink]="[ '/product/'+ product.category.path, product.id]" alt="">
       <p class="name">{{product.name}}</p>
       <div class="product">
          <p class="ingrediend">{{product.ingredients}}</p><br>
          <p><strong>{{product.weight}}г</strong></p>
       </div>
       <div class="prise">
-        <div> <p><strong>{{product.price}}грн</strong></p></div>
-         <div class="count">
-            <span>-</span>
-            <span>1</span>
-            <span>+</span>
-         </div>
-        <div> <button>Замовити</button></div>
+        <div> <p><strong>{{product.price * product.count}}грн</strong></p></div>
+        <div class="btn-group" role="group" >
+         <button type="button" (click)="productCount(product, false)" class="btn btn-primary">-</button>
+         <button type="button" class="btn btn-primary" >{{product.count}}</button>
+         <button type="button" (click)="productCount(product, true)" class="btn btn-primary">+</button>
+       </div>
+        <div> <button (click)="addBasket(product)">Замовити</button></div>
       </div>
    </div>
 </div>

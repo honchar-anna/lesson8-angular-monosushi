@@ -71,7 +71,9 @@ margin: 0 40px;
    box-sizing: border-box;
    background-color: #b5d8f7;
    text-align: center;
-
+   display: flex;
+align-items: baseline;
+    justify-content: center;
 padding:7px;
 }
 .basket > img{
