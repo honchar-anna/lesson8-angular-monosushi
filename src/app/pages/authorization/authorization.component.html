@@ -1,0 +1,7 @@
+<form action="" class="add-form" [formGroup]="authForm" (ngSubmit)="login()">
+   <input type="text" class="name" placeholder="*Електона пошта" formControlName="email" name="email">
+   <input type="password" class="title" placeholder="*Пароль" formControlName="password" name="password">
+   
+<button  class="btn-add"  [disabled]="authForm.invalid" type="submit">Login</button>
+
+</form>

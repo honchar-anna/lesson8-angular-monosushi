@@ -17,6 +17,9 @@ import { AdminProductsComponent } from './admin/admin-products/admin-products.co
 import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.component';
 import { ProductService } from './shared/services/product.service';
 import { DiscountService } from './shared/services/discount.service';
+import { AuthGuard } from './shared/guards/auth/auth.guard';
+import { AuthorizationComponent } from './pages/authorization/authorization.component';
+import { CabinetComponent } from './pages/cabinet/cabinet.component';
 
 const routes: Routes = [
  
@@ -27,7 +30,9 @@ const routes: Routes = [
   {path:'product/:category/:id', component:ProductInfoComponent, resolve:{productInfo:ProductService}},
   {path:'dostavka-ta-oplata', component:DeliveryComponent},
   {path:'pro-nas', component:AboutComponent},
-  {path:'admin', component:AdminComponent, children:[
+  {path:'auth', component:AuthorizationComponent},
+  {path:'cabinet', component:CabinetComponent,canActivate:[AuthGuard]},
+  {path:'admin', component:AdminComponent,canActivate:[AuthGuard] ,children:[
      {path:'categories', component:AdminCategoryComponent},
      {path:'products', component:AdminProductsComponent},
      {path:'orders', component:AdminOrdersComponent},

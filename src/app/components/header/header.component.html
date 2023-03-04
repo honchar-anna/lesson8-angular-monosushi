@@ -37,8 +37,10 @@
              </li>
              <li class="nav-item phone"><span><img src="https://cdn-icons-png.flaticon.com/512/1250/1250601.png" alt=""></span>
             <span class="number">(097) 878 08 37 <span class="text"> Пацюємо з <strong>11:00</strong> до <strong>23:59</strong></span></span></li>
-             
-             <li class="nav-item" [routerLink]="['admin']"><img src="https://cdn.icon-icons.com/icons2/1744/PNG/512/3643745-human-man-people-person-profile_113435.png" alt="" ></li>
+            <li class="nav-item" [routerLink]="['auth']" *ngIf="!isLogin"><img src="https://cdn.icon-icons.com/icons2/1744/PNG/512/3643745-human-man-people-person-profile_113435.png" alt="" >login</li>
+            
+             <li class="nav-item" [routerLink]="['/'+loginUrl]" *ngIf="isLogin"   routerLinkActive="active"><img src="https://cdn.icon-icons.com/icons2/1744/PNG/512/3643745-human-man-people-person-profile_113435.png" alt="" >{{loginPage}}</li>
+
              <li class="nav-item basket"><img src="https://cdn-icons-png.flaticon.com/512/3144/3144460.png"alt="" ><p><strong>{{total}} грн</strong></p>
              </li>
              
